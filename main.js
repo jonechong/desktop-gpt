@@ -6,7 +6,7 @@ function createWindow() {
     let win = new BrowserWindow({
         width: 800,
         height: 600,
-        icon: path.join(__dirname, "assets/ChatGPT_logo.png"),
+        icon: path.join(__dirname, "assets/DesktopGPT_logo.png"),
         webPreferences: {
             nodeIntegration: false,
         },
