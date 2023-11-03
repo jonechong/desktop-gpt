@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Hello World!",
     "main": "main.js",
-    "author": "",
+    "author": "Jone",
     "license": "",
     "devDependencies": {
         "@electron-forge/cli": "^6.4.2",
