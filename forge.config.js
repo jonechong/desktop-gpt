@@ -1,6 +1,7 @@
 module.exports = {
     packagerConfig: {
         asar: true,
+        icon: "./assets/DesktopGPT_logo.icns",
     },
     rebuildConfig: {},
     makers: [
@@ -14,7 +15,11 @@ module.exports = {
         },
         {
             name: "@electron-forge/maker-dmg",
-            config: {},
+            config: {
+                icon: "./assets/DesktopGPT_logo.icns",
+                title: "DesktopGPT",
+                name: "DesktopGPT",
+            },
         },
         {
             name: "@electron-forge/maker-deb",
