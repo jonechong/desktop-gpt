@@ -4,8 +4,7 @@ const path = require("path");
 function createWindow() {
     // Create the browser window.
     let win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        title: "DesktopGPT",
         icon: path.join(__dirname, "assets/DesktopGPT_logo.png"),
         webPreferences: {
             nodeIntegration: false,
@@ -17,6 +16,10 @@ function createWindow() {
 
     // Hide menu bar
     Menu.setApplicationMenu(null);
+
+    win.on("page-title-updated", (event) => {
+        event.preventDefault();
+    });
 
     // Persist session data.
     const ses = win.webContents.session;
