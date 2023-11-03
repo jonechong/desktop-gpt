@@ -1,7 +1,7 @@
 {
     "name": "desktop-gpt",
     "version": "1.0.0",
-    "description": "Hello World!",
+    "description": "Simple desktop ChatGPT app",
     "main": "main.js",
     "author": "Jone",
     "license": "",
