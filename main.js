@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, Menu } = require("electron");
 const path = require("path");
 
 function createWindow() {
@@ -14,6 +14,9 @@ function createWindow() {
 
     // Load the website
     win.loadURL("https://chat.openai.com/");
+
+    // Hide menu bar
+    Menu.setApplicationMenu(null);
 
     // Persist session data.
     const ses = win.webContents.session;
