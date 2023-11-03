@@ -6,10 +6,10 @@
     "author": "",
     "license": "",
     "devDependencies": {
-        "electron": "^27.0.3"
+        "electron": "^27.0.3",
+        "electron-packager": "^17.1.2"
     },
     "scripts": {
-      "start": "electron ."
+        "start": "electron ."
     }
-    
 }
